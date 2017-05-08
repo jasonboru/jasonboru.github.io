@@ -701,6 +701,11 @@ footer {
         margin: 0 0 15px 0;
         font-size: 0.9em;
     }
+
+    a {
+      font-size: 120%;
+      font-weight: 700;
+    }
 }
 
 /*
@@ -751,8 +756,6 @@ footer {
 
     h2 {
         margin: 0 0 15px 0;
-        color: #fff;
-        font-weight: 500;
     }
 }
 
@@ -935,6 +938,36 @@ footer {
         margin: 0;
         top: auto;
         transform: none;
+    }
+
+    #hangman {
+      background: url(../images/hangman-background.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #trivia {
+      background: url(../images/trivia-background.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #giphy {
+      background: url(../images/giphy-background.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #friendfinder {
+      background: url(../images/friendfinder-background.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #streamius {
+      background: url(../images/streamius-background.jpg);
+      background-size: cover;
+      background-position: center;
     }
 
     footer {
