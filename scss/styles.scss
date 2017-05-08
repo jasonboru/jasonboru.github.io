@@ -33,12 +33,13 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #60dffc;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
 $background: #fff;
-$background-alt: #f2f2f5;
+$background-alt: url(../images/coding_background_02.jpg);
+$background-light: url(../images/coding_background_03.jpg);
 
 // Define border colors
 $border: #dcd9d9;
@@ -167,7 +168,7 @@ header {
 
     a {
         display: block;
-        color: $base-color;
+        color: #6381b5;
         padding: 10px;
 
         &:hover {
@@ -318,7 +319,7 @@ footer {
     position: relative;
     display: inline-block;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 800;
     margin: 0 0 30px 0;
 
     &:after {
@@ -349,7 +350,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/coding_background_01.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -384,6 +385,7 @@ footer {
     }
 }
 
+/*
 #lead-overlay {
     position: absolute;
     height: 100%;
@@ -395,6 +397,7 @@ footer {
     background: rgba($base-color-hover, 0.8);
     z-index: 1;
 }
+*/
 
 #lead-down {
     position: absolute;
@@ -447,14 +450,16 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    background: $background-light;
 
     h2 {
-        color: $heading;
+        color: #6381b5;
     }
 
     p {
         color: $text;
         margin: 0;
+        margin-top: 30px;
     }
 }
 
@@ -470,7 +475,7 @@ footer {
     border-bottom: 1px solid $border;
 
     h2 {
-        color: $heading;
+        color: #fff;
     }
 }
 
@@ -566,7 +571,7 @@ footer {
     left: 0;
     top: 10px;
     font-weight: 300;
-    color: #374054;
+    color: #fff;
 }
 
 /*
@@ -576,17 +581,19 @@ footer {
 */
 
 #education {
+    background: $background-light;
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
 
     h2 {
-        color: $heading;
+        color: #6381b5;
         margin-bottom: 50px;
     }
 }
 
 .education-block {
+    background: #fff;
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
@@ -635,7 +642,7 @@ footer {
     text-align: center;
 
     h2 {
-        color: $heading;
+        color: #fff;
         margin-bottom: 50px;
     }
 }
@@ -701,7 +708,7 @@ footer {
         margin: 7px;
         padding: 5px 10px;
         color: $heading;
-        background: darken($background-alt, 5%);
+        background: $base-color;
         list-style: none;
         cursor: default;
         font-size: 1.2em;
@@ -716,7 +723,7 @@ footer {
 
 #contact {
     padding: 50px 15px;
-    background: $base-color;
+    background: $background-alt;
     text-align: center;
 
     h2 {
@@ -737,7 +744,7 @@ footer {
         border-radius: 4px;
         border: none;
         margin-bottom: 10px;
-        background: darken($base-color, 15%);
+        background: #6381b5;
         color: #fff;
         @include transition();
         @include placeholder {
